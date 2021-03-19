@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="newheader.css">  
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+
+   
+
+        <title>new toggle heder</title>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="header.js"></script>
+
+                  <!-- CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+
+     <!--TOP BAR-->
+     <section class="bg_top">
+        <div class="container-fluid">
+            <div class="row bar_size">
+                
+                <div class="col-md-3 col-sm-3  text-center">
+                     <a href="#"><i class="fas fa-user" style="font-size:20px;color: #fff;"></i></a>
+                </div>
+
+                <div class="col-md-6 col-sm-6  text-center padd">
+                    <span class="top_text">Pre-order! mask packs expected to arrive by july 31, 2020. free u.s. shipping $99+  </span>
+                </div>
+
+                <div class="col-md-3 col-sm-3 text-center ">
+                   <div class="search-box">
+                       <input class="search-txt" type="text" name="" placeholder="search..">
+                       <a class="search-btn" href="#"> <i class="fas fa-search"></i></a>                      
+                   </div>
+                </div>
+
+            </div>
+        </div>
+    </section>    
+
+        <!--MENU-->
+        <header>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#"><img src="../images/logo.png"></a></li>
+                <li class="item"><a href="#" class="red">Home</a></li>
+                <li class="item"><a href="#" class="orange">KIDS MASK PACKS</a></li>
+                <li class="item"><a href="#" class="blue">ADULT/TEEN MASK PACK</a></li>
+                <li class="item"><a href="#" class="green">CLASSPACKS/BULK BUY</a></li>
+                <li class="item"><a href="#" class="red">SHOP ALL</a></li>
+                <li class="item"><a href="#" class="orange">FAQ</a></li>
+                <li class="item"><a href="#" class="blue">SIZE CHART</a></li>
+                <li class="item button"><a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+        </nav>
+    </header>
+<style type="text/css">
+  .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel p{
+  font-size: 16px;
+  margin-top: 6px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*----------------*/
+.font-size-i{
+  font-size: 70px;
+}
+.marg-top-i{
+  margin-top: 12px;
+}
+.mar-btu-top-bot{
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+.product-des{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+}
+ul.product-des{
+  padding-left: 33px;
+  line-height: 1.6;
+}
+.sub, .add, .box{padding: 4px 12px;}
+.pricr-pro{
+  margin-top:-10px;
+  margin-bottom: 18px;
+}
+.add-to{
+    background-color: #EF5C67;
+    margin-right: 32px;
+    box-shadow: 5px 10px 20px 0px #a41b2547;
+    margin-bottom: 13px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 9px 35px; 
+} 
+.btu-blu{
+  background-color: #5D9CCF;
+}
+.cart-btu{
+  margin-top: 33px;
+  margin-bottom: 27px;
+}
+.img-wid{
+    width: 20%;
+}
+.por-mar{
+  margin-bottom: 20px;
+}
+.por-lef{
+  margin: 6px 10px;
+}
+@media (max-width: 550px){
+  .por-lef{
+     margin: 6px 6px;
+  }
+}
+@media (max-width: 450px){
+  .add-to{
+    display: flow-root;
+    text-align: center;
+    margin-left: 32px;
+  }
+  .cart-btu{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+}
+</style>
+
+  <div class=container>
+
+  </div>
+
+    <div class="container">
+    <div class="row">
+      <div class=""> 
+        <div class="col-md-6 Adjustable">
+            <img class="wow fadeIn por-mar" data-wow-duration="2s" src="adult_pro3.png">
+            <div>
+              <img class="wow fadeIn por-mar por-lef img-wid" data-wow-duration="2s" src="adult_pro3.png">
+              <img class="wow fadeIn por-mar por-lef img-wid" data-wow-duration="2s" src="adult_pro3.png">
+              <img class="wow fadeIn por-mar por-lef img-wid" data-wow-duration="2s" src="adult_pro3.png">
+              <img class="wow fadeIn por-mar por-lef img-wid" data-wow-duration="2s" src="adult_pro3.png">
+            </div>
+        </div>            
+
+        <div class="col-md-6 Adjustable">
+          <h2 class="">Crayola™ Kids Reusable Cloth Face Mask Set, Cool Colors, Back to School Supplies</h2>
+          <h3 class="col-green pricr-pro">₹3,131.09 INR</h3>
+
+          <div id="field1">Quntity 
+            <button type="button" id="sub" class="sub">-</button>
+            <input type="number" id="1" value="1" min="1" max="3" class="box" />
+            <button type="button" id="add" class="add">+</button>
+          </div>
+          <hr>
+          <div class="cart-btu">
+            <a href="#" class="add-to">ADD TO CART</a>
+            <a href="#" class="add-to btu-blu">BUY NOW</a>
+<!--             <a href="#" class="btu btu-red btu-shop">Shop Kide</a>
+            <a href="#" class="btu btu-red btu-shop">Shop Kide</a> -->
+          </div>
+
+          <p>Pre-Order now! Products ordered today are expected to arrive by Aug. 31.</p>
+          <p>Only $6/mask ($0.20 per day)
+            Our Crayola™ Cool Colors, non-medical mask packs come with a 5-mask system featuring unique face mask designs for each day of the school week to avoid cross-contamination. Look no further than our Crayola-branded masks for quality back to school supplies for kids.</p>
+          <p>Official licensed Crayola™ product. </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Product features:</h3>
+          <ul class="product-des">
+            <li>DAILY&nbsp;FACE MASKS FOR KIDS -&nbsp;5 daily cloth face masks with unique color designs - 1 for each school day!&nbsp;</li>
+            <li>ADJUSTABLE MASK: Features a dual-layer fabric&nbsp;kids face mask with a 3-D face design, secure fit adjustable ear straps, and a nose clip.</li>
+            <li>WASHABLE MASK FOR KIDS: Machine washable face masks with bonus mesh laundry bag&nbsp;</li>
+            <li>ORGANIZE BY NAME: Name tag to keep track of&nbsp;your masks</li>
+            <li>ENVIRONMENTALLY FRIENDLY: Reduces environmental waste caused by disposable single-use masks.&nbsp;</li>
+          </ul>
+        <h4>Due to the nature of this product, we do not accept returns or exchanges.&nbsp;</h4>
+    </div>
+    </div>
+  </div>
+
+<div class="container">
+  <button class="accordion">Care Instructions </button>
+  <div class="panel">
+    <p>Wash before first use! Machine wash with like colors in the mesh laundry bag included. Tumble dry low in the mesh laundry bag. Do not bleach. Do not iron. Do not dry clean. </p>
+  </div>  
+
+  <button class="accordion">Disclaimer </button>
+  <div class="panel">
+      <p>SchoolMaskPack Fabric Mask Products: These fabric masks are non-medical, non-surgical, and non-industrial&nbsp;masks&nbsp;and not intended to be used in these situations or high-risk situations. This product does not guarantee prevention from transmission or infection of disease. This product is not intended to be used by children under 3 years old and should be used under adult supervision. Small parts may present a choking hazard.&nbsp;</p>
+      <p>This face mask is not to be used in any surgical setting or where significant exposure to liquid, bodily, or other hazardous fluids may be expected, used in a clinical setting where the infection risk level through inhalation exposure is high, or used in the presence of a high-intensity heat source or flammable gas. This product has not been FDA cleared or approved.</p>
+      <p></p>
+      <p>Due to lighting and different devices you&nbsp;might&nbsp;be using, the&nbsp;color&nbsp;in the image&nbsp;may vary slightly&nbsp;from the&nbsp;actual color&nbsp;of the&nbsp;product.</p>
+      <p></p>
+      <p>SchoolMaskPack™ Mask Straps: Not recommended for children under 4 years old. Use under adult supervision. Potential choking&nbsp;hazard for young children or children at play.</p>   
+  </div>
+
+</div>
+
+      <!-- ADULT/TEEN MASK PACKS -->
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="sub-title sub-title-two text-center wow flipInY"data-wow-duration="2s">
+            <h2>ADULT/TEEN MASK PACKS</h2>
+            <img src="heading-line-1.png">
+          </div>
+        </div>
+        <div class="row kids-padd">
+          <div class="col-md-4 col-sm-6 prod-width wow pulse" data-wow-duration="2s">
+            <div class="kids">
+                <div class="">
+                  <img src="kidsmask_pro1.png">
+                </div>
+                <p>Crayola™ Teacher/Adult Reusable Cloth Face Mask Set, Crayola™ Stripe, Back to ... School Supplie</p>
+                <h3 class="text-center col-red">₹3,131.09 INR</h3>
+            </div>
+          </div> 
+          <div class="col-md-4 col-sm-6 prod-width wow pulse" data-wow-duration="2s">
+            <div class="kids">
+                <div class="">
+                  <img src="kidsmask_pro2.png">
+                </div>
+                <p>Crayola™ Teacher/Adult Reusable Cloth Face Mask Set, Super Stripes!, Back to School Supplies</p>
+                <h3 class="text-center col-green">₹3,131.09 INR</h3>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 prod-width wow pulse " data-wow-duration="2s">
+            <div class="kids">
+                <div class="">
+                  <img src="kidsmask_pro3.png">
+                </div>
+                <p>Crayola™ Teacher/Adult Reusable Cloth Face Mask Set, Classic Stripe, Back to School Supplie</p>
+                <h3 class="text-center col-orange">₹3,131.09 INR</h3>
+            </div>
+          </div>
+          <div class="text-center col-md-12 btu-pro-mar mar-btu-top-bot">
+            <a href="#" class="btu btu-blue btu-view">View all</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class=container>
+        <div class="row" >
+            <div class="col-md-12 center-block">
+                <img class="wow fadeIn Secure teen" data-wow-duration="2s" src="S_2_0231_4.jpg">
+            </div>  
+            <div class="text-center">
+              <i class="fa fa-instagram font-size-i" aria-hidden="true"></i>
+              <h3 class="marg-top-i">#SchoolMaskPack</h3>
+            </div>
+        </div>
+    </div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<script type="text/javascript">
+  $('.add').click(function () {
+    if ($(this).prev().val() < 1000000) {
+      $(this).prev().val(+$(this).prev().val() + 1);
+    }
+});
+$('.sub').click(function () {
+    if ($(this).next().val() > 1) {
+      if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+    }
+});
+</script>
+</body>
+</html>
